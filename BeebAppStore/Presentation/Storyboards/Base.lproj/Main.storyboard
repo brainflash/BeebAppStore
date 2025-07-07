@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iNu-pr-koU">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Beeb App Store-->
+        <scene sceneID="6j7-wT-lvn">
+            <objects>
+                <viewController title="Beeb App Store" id="L88-9F-KVv" customClass="MainViewController" customModule="BeebAppStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8eu-Gv-iVs">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="nda-M4-2gj">
+                                <rect key="frame" x="0.0" y="138" width="390" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="uFb-BW-m6f"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="L88-9F-KVv" id="SGR-3c-nrh"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="X7A-qf-8hc">
+                                <rect key="frame" x="0.0" y="194" width="390" height="582"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AppResultCell" rowHeight="60" id="hNC-mK-ZNW" customClass="AppResultCell" customModule="BeebAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hNC-mK-ZNW" id="6aZ-9o-TKg">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sZ2-vP-OOH">
+                                                    <rect key="frame" x="20" y="4" width="52" height="52"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="sZ2-vP-OOH" secondAttribute="height" multiplier="1:1" id="kGP-il-glS"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imt-Sj-sWi">
+                                                    <rect key="frame" x="82" y="4" width="100" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="8nB-pu-D9c"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Name Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lkc-qh-Wad">
+                                                    <rect key="frame" x="190" y="4" width="184" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="184" id="ur7-Vq-1Xc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seller Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3K-cb-rHC">
+                                                    <rect key="frame" x="82" y="32" width="100" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seller Name Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8U-eo-hPg">
+                                                    <rect key="frame" x="190" y="32" width="184" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="T3K-cb-rHC" firstAttribute="top" secondItem="Imt-Sj-sWi" secondAttribute="bottom" constant="7" id="4eJ-pV-pLS"/>
+                                                <constraint firstItem="lkc-qh-Wad" firstAttribute="trailing" secondItem="X8U-eo-hPg" secondAttribute="trailing" id="Gjo-5G-auX"/>
+                                                <constraint firstItem="T3K-cb-rHC" firstAttribute="baseline" secondItem="X8U-eo-hPg" secondAttribute="baseline" id="I7O-yt-M26"/>
+                                                <constraint firstItem="X8U-eo-hPg" firstAttribute="trailing" secondItem="6aZ-9o-TKg" secondAttribute="trailing" constant="-16" id="Pb8-er-aNB"/>
+                                                <constraint firstItem="lkc-qh-Wad" firstAttribute="trailing" secondItem="6aZ-9o-TKg" secondAttribute="trailing" constant="-16" id="Qhd-pu-5ZE"/>
+                                                <constraint firstItem="Imt-Sj-sWi" firstAttribute="baseline" secondItem="lkc-qh-Wad" secondAttribute="baseline" id="R1n-bA-7os"/>
+                                                <constraint firstItem="X8U-eo-hPg" firstAttribute="leading" secondItem="T3K-cb-rHC" secondAttribute="trailing" constant="8" symbolic="YES" id="Rbz-cw-k7S"/>
+                                                <constraint firstItem="Imt-Sj-sWi" firstAttribute="top" secondItem="6aZ-9o-TKg" secondAttribute="topMargin" constant="-7" id="RpC-di-Yyr"/>
+                                                <constraint firstItem="sZ2-vP-OOH" firstAttribute="bottom" secondItem="6aZ-9o-TKg" secondAttribute="bottom" constant="-4" id="Uem-mI-kA2"/>
+                                                <constraint firstItem="lkc-qh-Wad" firstAttribute="leading" secondItem="Imt-Sj-sWi" secondAttribute="trailing" constant="8" symbolic="YES" id="VqB-K0-Q33"/>
+                                                <constraint firstItem="sZ2-vP-OOH" firstAttribute="top" secondItem="6aZ-9o-TKg" secondAttribute="top" constant="4" id="YwH-f6-Rqr"/>
+                                                <constraint firstItem="sZ2-vP-OOH" firstAttribute="leading" secondItem="6aZ-9o-TKg" secondAttribute="leadingMargin" constant="4" id="cMP-34-7Zp"/>
+                                                <constraint firstItem="Imt-Sj-sWi" firstAttribute="leading" secondItem="sZ2-vP-OOH" secondAttribute="trailing" constant="10" id="gRp-Od-80I"/>
+                                                <constraint firstItem="lkc-qh-Wad" firstAttribute="leading" secondItem="X8U-eo-hPg" secondAttribute="leading" id="jS7-ny-CBz"/>
+                                                <constraint firstItem="Imt-Sj-sWi" firstAttribute="leading" secondItem="T3K-cb-rHC" secondAttribute="leading" id="mM3-hX-udE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="appIconView" destination="sZ2-vP-OOH" id="B4F-oE-wzl"/>
+                                            <outlet property="appNameLabel" destination="Imt-Sj-sWi" id="OUx-j2-kPh"/>
+                                            <outlet property="appNameValue" destination="lkc-qh-Wad" id="z29-Jc-Hhv"/>
+                                            <outlet property="sellerNameLabel" destination="T3K-cb-rHC" id="G1H-2a-0DU"/>
+                                            <outlet property="sellerNameValue" destination="X8U-eo-hPg" id="E7M-29-z8n"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="d80-UZ-PF6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nda-M4-2gj" firstAttribute="leading" secondItem="8eu-Gv-iVs" secondAttribute="leading" id="2Zr-Gm-8ps"/>
+                            <constraint firstItem="nda-M4-2gj" firstAttribute="top" secondItem="d80-UZ-PF6" secondAttribute="top" id="5Qy-Ih-LBP"/>
+                            <constraint firstAttribute="trailing" secondItem="nda-M4-2gj" secondAttribute="trailing" id="hf6-8X-j4y"/>
+                            <constraint firstItem="X7A-qf-8hc" firstAttribute="bottom" secondItem="d80-UZ-PF6" secondAttribute="bottom" id="jNr-GT-RaL"/>
+                            <constraint firstItem="nda-M4-2gj" firstAttribute="trailing" secondItem="X7A-qf-8hc" secondAttribute="trailing" id="k8g-0Y-EMH"/>
+                            <constraint firstItem="nda-M4-2gj" firstAttribute="leading" secondItem="X7A-qf-8hc" secondAttribute="leading" id="mbF-rx-pVa"/>
+                            <constraint firstItem="nda-M4-2gj" firstAttribute="bottom" secondItem="X7A-qf-8hc" secondAttribute="top" id="ppv-ka-djT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Beeb App Store" id="1qL-VJ-FA5"/>
+                    <connections>
+                        <outlet property="appResultsTable" destination="X7A-qf-8hc" id="cde-dA-1X5"/>
+                        <outlet property="searchBar" destination="nda-M4-2gj" id="iRR-IR-Tqq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dmA-L1-fcP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237.40458015267174" y="-82.394366197183103"/>
+        </scene>
+        <!--Beeb App Store-->
+        <scene sceneID="Tsd-6p-bwX">
+            <objects>
+                <navigationController title="Beeb App Store" automaticallyAdjustsScrollViewInsets="NO" id="iNu-pr-koU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dDl-ez-BHk">
+                        <rect key="frame" x="0.0" y="94" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="L88-9F-KVv" kind="relationship" relationship="rootViewController" id="mfb-I2-w51"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EG7-k0-biU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-689.3129770992366" y="-82.394366197183103"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD5C19A22E1BAD0A003D4783 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5C19A12E1BAD0A003D4783 /* NetworkMonitor.swift */; };
+		CDC151372E191898009CCA9B /* SearchTermManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC151362E191898009CCA9B /* SearchTermManagerTests.swift */; };
+		CDC1513E2E1A93D2009CCA9B /* MockSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC1513D2E1A93D2009CCA9B /* MockSearchManager.swift */; };
+		CDC151412E1A93FA009CCA9B /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC151402E1A93FA009CCA9B /* MockNetworkService.swift */; };
+		CDC151432E1A9C99009CCA9B /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC151422E1A9C99009CCA9B /* MainViewModelTests.swift */; };
+		CDC151462E1AA4F9009CCA9B /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC151452E1AA4F9009CCA9B /* TestUtils.swift */; };
+		CDC151482E1AB2CF009CCA9B /* SearchResultMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC151472E1AB2CF009CCA9B /* SearchResultMapperTests.swift */; };
+		CDED38442E17D6480080264A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED38382E17D6480080264A /* AppDelegate.swift */; };
+		CDED38452E17D6480080264A /* BeebAppStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDED383A2E17D6480080264A /* BeebAppStore.xcdatamodeld */; };
+		CDED38462E17D6480080264A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED38402E17D6480080264A /* SceneDelegate.swift */; };
+		CDED38472E17D6480080264A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED38412E17D6480080264A /* MainViewController.swift */; };
+		CDED38482E17D6480080264A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDED38392E17D6480080264A /* Assets.xcassets */; };
+		CDED384A2E17D6480080264A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDED383D2E17D6480080264A /* LaunchScreen.storyboard */; };
+		CDED384B2E17D6480080264A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDED383F2E17D6480080264A /* Main.storyboard */; };
+		CDED385E2E17DAD40080264A /* AppResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED385D2E17DAD40080264A /* AppResultCell.swift */; };
+		CDED38702E17E6F70080264A /* SearchTermManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED386F2E17E6F70080264A /* SearchTermManagerImpl.swift */; };
+		CDED38742E17E7BF0080264A /* SearchTermManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED38722E17E7BF0080264A /* SearchTermManager.swift */; };
+		CDED38772E17E8750080264A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED38762E17E8750080264A /* NetworkService.swift */; };
+		CDED387A2E17E87F0080264A /* NetworkServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED38792E17E87F0080264A /* NetworkServiceImpl.swift */; };
+		CDED387F2E17E9340080264A /* AppStoreResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED387D2E17E9340080264A /* AppStoreResult.swift */; };
+		CDED38822E17E9A40080264A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED38802E17E9A40080264A /* NetworkError.swift */; };
+		CDED38852E17EC700080264A /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED38832E17EC700080264A /* SearchResponse.swift */; };
+		CDED38872E17F07E0080264A /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED38862E17F07E0080264A /* MainViewModel.swift */; };
+		CDED388B2E17F28C0080264A /* SearchResultMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED388A2E17F28C0080264A /* SearchResultMapper.swift */; };
+		CDED38A22E17FF850080264A /* SearchResult+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED389A2E17FF850080264A /* SearchResult+CoreDataClass.swift */; };
+		CDED38A32E17FF850080264A /* SearchResult+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED389B2E17FF850080264A /* SearchResult+CoreDataProperties.swift */; };
+		CDED38A42E17FF850080264A /* SearchTerm+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED389C2E17FF850080264A /* SearchTerm+CoreDataClass.swift */; };
+		CDED38A52E17FF850080264A /* SearchTerm+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED389D2E17FF850080264A /* SearchTerm+CoreDataProperties.swift */; };
+		CDED38A72E1802190080264A /* SearchResult+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED38A62E1802190080264A /* SearchResult+Extension.swift */; };
+		CDED38AA2E18264D0080264A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDED38A92E18264D0080264A /* DetailViewController.swift */; };
+		CDED38AD2E1826690080264A /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDED38AC2E1826690080264A /* Detail.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDED381B2E17D3840080264A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDED37F92E17D3820080264A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDED38002E17D3820080264A;
+			remoteInfo = BeebAppStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD5C19A12E1BAD0A003D4783 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		CDC151362E191898009CCA9B /* SearchTermManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermManagerTests.swift; sourceTree = "<group>"; };
+		CDC1513C2E1A8F92009CCA9B /* BeebAppStore.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BeebAppStore.xctestplan; sourceTree = "<group>"; };
+		CDC1513D2E1A93D2009CCA9B /* MockSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSearchManager.swift; sourceTree = "<group>"; };
+		CDC151402E1A93FA009CCA9B /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		CDC151422E1A9C99009CCA9B /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
+		CDC151452E1AA4F9009CCA9B /* TestUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
+		CDC151472E1AB2CF009CCA9B /* SearchResultMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultMapperTests.swift; sourceTree = "<group>"; };
+		CDED38012E17D3820080264A /* BeebAppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeebAppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDED381A2E17D3840080264A /* BeebAppStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeebAppStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDED38382E17D6480080264A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDED38392E17D6480080264A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CDED383B2E17D6480080264A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDED383C2E17D6480080264A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CDED383E2E17D6480080264A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDED38402E17D6480080264A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CDED38412E17D6480080264A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CDED38432E17D6480080264A /* BeebAppStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeebAppStore.xcdatamodel; sourceTree = "<group>"; };
+		CDED385D2E17DAD40080264A /* AppResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResultCell.swift; sourceTree = "<group>"; };
+		CDED386F2E17E6F70080264A /* SearchTermManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermManagerImpl.swift; sourceTree = "<group>"; };
+		CDED38722E17E7BF0080264A /* SearchTermManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTermManager.swift; sourceTree = "<group>"; };
+		CDED38762E17E8750080264A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CDED38792E17E87F0080264A /* NetworkServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceImpl.swift; sourceTree = "<group>"; };
+		CDED387D2E17E9340080264A /* AppStoreResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreResult.swift; sourceTree = "<group>"; };
+		CDED38802E17E9A40080264A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CDED38832E17EC700080264A /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		CDED38862E17F07E0080264A /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		CDED388A2E17F28C0080264A /* SearchResultMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultMapper.swift; sourceTree = "<group>"; };
+		CDED389A2E17FF850080264A /* SearchResult+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResult+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CDED389B2E17FF850080264A /* SearchResult+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResult+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CDED389C2E17FF850080264A /* SearchTerm+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchTerm+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CDED389D2E17FF850080264A /* SearchTerm+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchTerm+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CDED38A62E1802190080264A /* SearchResult+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchResult+Extension.swift"; sourceTree = "<group>"; };
+		CDED38A92E18264D0080264A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CDED38AC2E1826690080264A /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDED37FE2E17D3820080264A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDED38172E17D3840080264A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDC1513F2E1A93E0009CCA9B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				CDC151402E1A93FA009CCA9B /* MockNetworkService.swift */,
+				CDC1513D2E1A93D2009CCA9B /* MockSearchManager.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		CDC151442E1AA4E3009CCA9B /* Test Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CDC151452E1AA4F9009CCA9B /* TestUtils.swift */,
+			);
+			path = "Test Utils";
+			sourceTree = "<group>";
+		};
+		CDED37F82E17D3820080264A = {
+			isa = PBXGroup;
+			children = (
+				CDED38422E17D6480080264A /* BeebAppStore */,
+				CDED384D2E17D64C0080264A /* BeebAppStoreTests */,
+				CDED38022E17D3820080264A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDED38022E17D3820080264A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDED38012E17D3820080264A /* BeebAppStore.app */,
+				CDED381A2E17D3840080264A /* BeebAppStoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDED38422E17D6480080264A /* BeebAppStore */ = {
+			isa = PBXGroup;
+			children = (
+				CDED38542E17D6510080264A /* Data */,
+				CDED38552E17D6580080264A /* Services */,
+				CDED38562E17D6750080264A /* Presentation */,
+				CDED38382E17D6480080264A /* AppDelegate.swift */,
+				CDED38392E17D6480080264A /* Assets.xcassets */,
+				CDED383A2E17D6480080264A /* BeebAppStore.xcdatamodeld */,
+				CDED383B2E17D6480080264A /* Info.plist */,
+				CDED38402E17D6480080264A /* SceneDelegate.swift */,
+			);
+			path = BeebAppStore;
+			sourceTree = "<group>";
+		};
+		CDED384D2E17D64C0080264A /* BeebAppStoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDC151442E1AA4E3009CCA9B /* Test Utils */,
+				CDC1513F2E1A93E0009CCA9B /* Mocks */,
+				CDC151422E1A9C99009CCA9B /* MainViewModelTests.swift */,
+				CDC151472E1AB2CF009CCA9B /* SearchResultMapperTests.swift */,
+				CDC151362E191898009CCA9B /* SearchTermManagerTests.swift */,
+				CDC1513C2E1A8F92009CCA9B /* BeebAppStore.xctestplan */,
+			);
+			path = BeebAppStoreTests;
+			sourceTree = "<group>";
+		};
+		CDED38542E17D6510080264A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CDED38722E17E7BF0080264A /* SearchTermManager.swift */,
+				CDED386F2E17E6F70080264A /* SearchTermManagerImpl.swift */,
+				CDED38A62E1802190080264A /* SearchResult+Extension.swift */,
+				CDED38752E17E8100080264A /* Core Data generated */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CDED38552E17D6580080264A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CDED38892E17F27C0080264A /* Mappers */,
+				CDED387C2E17E9280080264A /* Models */,
+				CDED38572E17D6840080264A /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CDED38562E17D6750080264A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CDED38592E17D6960080264A /* View Models */,
+				CDED38582E17D6910080264A /* View Controllers */,
+				CDED385B2E17DAB40080264A /* Views */,
+				CDED385A2E17D7240080264A /* Storyboards */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CDED38572E17D6840080264A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CDED38802E17E9A40080264A /* NetworkError.swift */,
+				CDED38762E17E8750080264A /* NetworkService.swift */,
+				CDED38792E17E87F0080264A /* NetworkServiceImpl.swift */,
+				CD5C19A12E1BAD0A003D4783 /* NetworkMonitor.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CDED38582E17D6910080264A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CDED38412E17D6480080264A /* MainViewController.swift */,
+				CDED38A92E18264D0080264A /* DetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CDED38592E17D6960080264A /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDED38862E17F07E0080264A /* MainViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		CDED385A2E17D7240080264A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CDED383D2E17D6480080264A /* LaunchScreen.storyboard */,
+				CDED383F2E17D6480080264A /* Main.storyboard */,
+				CDED38AC2E1826690080264A /* Detail.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CDED385B2E17DAB40080264A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDED385D2E17DAD40080264A /* AppResultCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CDED38752E17E8100080264A /* Core Data generated */ = {
+			isa = PBXGroup;
+			children = (
+				CDED389A2E17FF850080264A /* SearchResult+CoreDataClass.swift */,
+				CDED389B2E17FF850080264A /* SearchResult+CoreDataProperties.swift */,
+				CDED389C2E17FF850080264A /* SearchTerm+CoreDataClass.swift */,
+				CDED389D2E17FF850080264A /* SearchTerm+CoreDataProperties.swift */,
+			);
+			path = "Core Data generated";
+			sourceTree = "<group>";
+		};
+		CDED387C2E17E9280080264A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDED387D2E17E9340080264A /* AppStoreResult.swift */,
+				CDED38832E17EC700080264A /* SearchResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CDED38892E17F27C0080264A /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				CDED388A2E17F28C0080264A /* SearchResultMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDED38002E17D3820080264A /* BeebAppStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDED382D2E17D3840080264A /* Build configuration list for PBXNativeTarget "BeebAppStore" */;
+			buildPhases = (
+				CDED37FD2E17D3820080264A /* Sources */,
+				CDED37FE2E17D3820080264A /* Frameworks */,
+				CDED37FF2E17D3820080264A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeebAppStore;
+			packageProductDependencies = (
+			);
+			productName = BeebAppStore;
+			productReference = CDED38012E17D3820080264A /* BeebAppStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDED38192E17D3840080264A /* BeebAppStoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDED38322E17D3840080264A /* Build configuration list for PBXNativeTarget "BeebAppStoreTests" */;
+			buildPhases = (
+				CDED38162E17D3840080264A /* Sources */,
+				CDED38172E17D3840080264A /* Frameworks */,
+				CDED38182E17D3840080264A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDED381C2E17D3840080264A /* PBXTargetDependency */,
+			);
+			name = BeebAppStoreTests;
+			packageProductDependencies = (
+			);
+			productName = BeebAppStoreTests;
+			productReference = CDED381A2E17D3840080264A /* BeebAppStoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDED37F92E17D3820080264A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					CDED38002E17D3820080264A = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					CDED38192E17D3840080264A = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = CDED38002E17D3820080264A;
+					};
+				};
+			};
+			buildConfigurationList = CDED37FC2E17D3820080264A /* Build configuration list for PBXProject "BeebAppStore" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDED37F82E17D3820080264A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CDED38022E17D3820080264A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDED38002E17D3820080264A /* BeebAppStore */,
+				CDED38192E17D3840080264A /* BeebAppStoreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDED37FF2E17D3820080264A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDED38482E17D6480080264A /* Assets.xcassets in Resources */,
+				CDED384A2E17D6480080264A /* LaunchScreen.storyboard in Resources */,
+				CDED384B2E17D6480080264A /* Main.storyboard in Resources */,
+				CDED38AD2E1826690080264A /* Detail.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDED38182E17D3840080264A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDED37FD2E17D3820080264A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDED38442E17D6480080264A /* AppDelegate.swift in Sources */,
+				CDED38452E17D6480080264A /* BeebAppStore.xcdatamodeld in Sources */,
+				CDED38A22E17FF850080264A /* SearchResult+CoreDataClass.swift in Sources */,
+				CDED38A32E17FF850080264A /* SearchResult+CoreDataProperties.swift in Sources */,
+				CDED38A42E17FF850080264A /* SearchTerm+CoreDataClass.swift in Sources */,
+				CDED38A52E17FF850080264A /* SearchTerm+CoreDataProperties.swift in Sources */,
+				CDED38772E17E8750080264A /* NetworkService.swift in Sources */,
+				CDED38AA2E18264D0080264A /* DetailViewController.swift in Sources */,
+				CDED38A72E1802190080264A /* SearchResult+Extension.swift in Sources */,
+				CDED38462E17D6480080264A /* SceneDelegate.swift in Sources */,
+				CDED387F2E17E9340080264A /* AppStoreResult.swift in Sources */,
+				CDED388B2E17F28C0080264A /* SearchResultMapper.swift in Sources */,
+				CDED38872E17F07E0080264A /* MainViewModel.swift in Sources */,
+				CD5C19A22E1BAD0A003D4783 /* NetworkMonitor.swift in Sources */,
+				CDED387A2E17E87F0080264A /* NetworkServiceImpl.swift in Sources */,
+				CDED385E2E17DAD40080264A /* AppResultCell.swift in Sources */,
+				CDED38702E17E6F70080264A /* SearchTermManagerImpl.swift in Sources */,
+				CDED38852E17EC700080264A /* SearchResponse.swift in Sources */,
+				CDED38742E17E7BF0080264A /* SearchTermManager.swift in Sources */,
+				CDED38822E17E9A40080264A /* NetworkError.swift in Sources */,
+				CDED38472E17D6480080264A /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDED38162E17D3840080264A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC151412E1A93FA009CCA9B /* MockNetworkService.swift in Sources */,
+				CDC151462E1AA4F9009CCA9B /* TestUtils.swift in Sources */,
+				CDC1513E2E1A93D2009CCA9B /* MockSearchManager.swift in Sources */,
+				CDC151482E1AB2CF009CCA9B /* SearchResultMapperTests.swift in Sources */,
+				CDC151372E191898009CCA9B /* SearchTermManagerTests.swift in Sources */,
+				CDC151432E1A9C99009CCA9B /* MainViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDED381C2E17D3840080264A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDED38002E17D3820080264A /* BeebAppStore */;
+			targetProxy = CDED381B2E17D3840080264A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDED383D2E17D6480080264A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDED383C2E17D6480080264A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CDED383F2E17D6480080264A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDED383E2E17D6480080264A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDED382E2E17D3840080264A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 982NC82DH4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeebAppStore/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.brainflash.BeebAppStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CDED382F2E17D3840080264A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 982NC82DH4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeebAppStore/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.brainflash.BeebAppStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CDED38302E17D3840080264A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 982NC82DH4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CDED38312E17D3840080264A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 982NC82DH4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDED38332E17D3840080264A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 982NC82DH4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.brainflash.BeebAppStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeebAppStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BeebAppStore";
+			};
+			name = Debug;
+		};
+		CDED38342E17D3840080264A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 982NC82DH4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.brainflash.BeebAppStoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BeebAppStore.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BeebAppStore";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDED37FC2E17D3820080264A /* Build configuration list for PBXProject "BeebAppStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDED38302E17D3840080264A /* Debug */,
+				CDED38312E17D3840080264A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDED382D2E17D3840080264A /* Build configuration list for PBXNativeTarget "BeebAppStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDED382E2E17D3840080264A /* Debug */,
+				CDED382F2E17D3840080264A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDED38322E17D3840080264A /* Build configuration list for PBXNativeTarget "BeebAppStoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDED38332E17D3840080264A /* Debug */,
+				CDED38342E17D3840080264A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CDED383A2E17D6480080264A /* BeebAppStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CDED38432E17D6480080264A /* BeebAppStore.xcdatamodel */,
+			);
+			currentVersion = CDED38432E17D6480080264A /* BeebAppStore.xcdatamodel */;
+			path = BeebAppStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CDED37F92E17D3820080264A /* Project object */;
+}

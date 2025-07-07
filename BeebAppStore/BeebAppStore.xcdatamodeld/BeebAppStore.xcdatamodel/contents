@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23788.4" systemVersion="24D70" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="SearchResult" representedClassName="SearchResult" syncable="YES">
+        <attribute name="appDescription" optional="YES" attributeType="String"/>
+        <attribute name="appName" attributeType="String"/>
+        <attribute name="iconURL" optional="YES" attributeType="String"/>
+        <attribute name="imageURL" optional="YES" attributeType="String"/>
+        <attribute name="price" attributeType="Decimal" defaultValueString="0.0"/>
+        <attribute name="rating" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sellerName" attributeType="String"/>
+        <relationship name="searchTerms" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SearchTerm" inverseName="searchResults" inverseEntity="SearchTerm"/>
+    </entity>
+    <entity name="SearchTerm" representedClassName="SearchTerm" syncable="YES">
+        <attribute name="term" attributeType="String"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="searchResults" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SearchResult" inverseName="searchTerms" inverseEntity="SearchResult"/>
+    </entity>
+</model>

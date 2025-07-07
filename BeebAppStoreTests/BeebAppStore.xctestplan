@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "3AA42AFA-F2DD-422A-AAC8-C1300548C3D5",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:BeebAppStore.xcodeproj",
+      "identifier" : "CDED38002E17D3820080264A",
+      "name" : "BeebAppStore"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:BeebAppStore.xcodeproj",
+        "identifier" : "CDED38192E17D3840080264A",
+        "name" : "BeebAppStoreTests"
+      }
+    }
+  ],
+  "version" : 1
+}
