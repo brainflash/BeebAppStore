@@ -32,12 +32,12 @@ A test iOS application built using **UIKit** that allows users to search for app
 
 
 ## Project Structure
-• Data/ - Data related classes including Core Data generated
-• Services/ - Networking and API models + mapper
-• Presentation/ - View controllers, storyboards, views and view models
-• SearchTermManager.swift – Handles Core Data logic
-• NetworkService.swift – Fetches iTunes data, maps to Core Data model
-• NetworkMonitor.swift - monitors internet connection
-• MainViewController.swift - initial view controller with search bar and results table
-• DetailViewController.swift - detail view when a result is selected from the main view
-• BeebAppStoreTests/ - XCUnit unit tests 
+- Data/ - Data related classes including Core Data generated
+- Services/ - Networking and API models + mapper
+- Presentation/ - View controllers, storyboards, views and view models
+- SearchTermManager.swift – Handles Core Data logic
+- NetworkService.swift – Fetches iTunes data, maps to Core Data model
+- NetworkMonitor.swift - monitors internet connection
+- MainViewController.swift - initial view controller with search bar and results table
+- DetailViewController.swift - detail view when a result is selected from the main view
+- BeebAppStoreTests/ - XCUnit unit tests 
